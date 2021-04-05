@@ -1,0 +1,150 @@
+:root {
+  --bg-color: #000;
+  --body-color: #fff;
+  --accent-color: #017eba;
+  --accent-glow-color: #017fba6c;
+  --accent-shadow: var(--accent-glow-color) 0 0 18px;
+  --link-color: #0293d6;
+  --link-hover-color: #00547a;
+  --link-hover-glow: #017fba6c 0px 0px 8px;
+}
+
+@font-face {
+  font-family: "Menlo";
+  src: url("/Menlo-Regular.ttf");
+}
+
+body {
+  font-family: "Source Code Pro", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--body-color);
+}
+
+// prettier-ignore
+h1, h2, h3, h4, h5, h6 {
+  font-family: "VT323", monospace;
+  color: var(--accent-color);
+  text-shadow: var(--accent-shadow);
+  margin: 1rem 0;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+a {
+  color: var(--link-color);
+
+  &:hover {
+    // color: var(--link-hover-color);
+    text-shadow: var(--link-hover-glow);
+  }
+}
+
+#__next a.link:hover {
+  color: var(--link-color);
+  text-shadow: var(--link-hover-glow);
+}
+
+pre {
+  font-family: "Menlo", Courier, monospace;
+}
+
+#geist-ui-tooltip > .tooltip-content {
+  background: #111;
+
+  & > .inner > span {
+    border-color: transparent #111 transparent transparent;
+  }
+}
+
+#__next > section {
+  min-height: calc(100vh - 72px);
+}
+
+section{
+  width: 100%!important;
+}
+
+.card h2 {
+  text-shadow: none;
+}
+
+#__next table {
+  font-family: "Source Code Pro", monospace;
+}
+
+#__next tr {
+  transition: none;
+}
+
+#__next table th {
+  font-weight: bold;
+  background-color: #1f1f1f;
+  // background-color: var(--bg-color);
+}
+
+
+#__next table tbody tr {
+  background-color: #000;
+}
+
+#__next table tbody tr:hover {
+  background-color: var(--accent-color);
+
+  & td {
+    color: var(--bg-color);
+  }
+}
+
+#__next table th,
+#__next table td {
+  color: #ebebeb;
+  border-color: #333;
+}
+
+#__next main {
+  min-height: calc(100vh - 10rem);
+}
+
+#__next footer {
+  position: relative;
+}
+
+#__next .tabs .tab.active {
+  color: var(--accent-color);
+  text-shadow: var(--accent-shadow);
+
+  &:after {
+    background-color: var(--accent-color);
+  }
+}
+
+#__next .collapse.shadow,
+#__next .card {
+  background-color: #1f1f1f;
+}
+
+#__next .input-container {
+  background-color: #111;
+}
+
+#__next .btn > .text {
+  color: white;
+}
+
+#__next .btn:disabled > .text {
+  color: #999;
+}
+
+#__next .point:before {
+  background-color: var(--accent-color);
+}
+
+
+/* ZZ */
+.card{
+  border-radius: 0!important;
+}
